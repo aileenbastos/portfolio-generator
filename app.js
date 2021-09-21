@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 const inquirer = require('inquirer');
 const generatePage = require('./src/page-template');
 const { writeFile, copyFile } = require('./utils/generate-site');
+=======
+const { writeFile, copyFile } = require('./utils/generate-site.js');
+const inquirer = require('inquirer');
+const generatePage = require('./src/page-template');
+>>>>>>> 3fa88289961ca5fbaa88d7aaa06b14dd30cd7a3f
 
 const promptUser = () => {
   return inquirer.prompt([
@@ -143,4 +149,8 @@ promptUser()
   })
   .catch(err => {
     console.log(err);
+<<<<<<< HEAD
   });
+=======
+  });
+>>>>>>> 3fa88289961ca5fbaa88d7aaa06b14dd30cd7a3f

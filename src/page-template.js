@@ -38,7 +38,10 @@ const generateProjects = projectsArr => {
       ${projectsArr
         .filter(({ feature }) => !feature)
         .map(({ name, description, languages, link }) => {
+<<<<<<< HEAD
           console.log(languages);
+=======
+>>>>>>> 3fa88289961ca5fbaa88d7aaa06b14dd30cd7a3f
           return `
           <div class="col-12 col-md-6 mb-2 bg-dark text-light p-3 flex-column">
             <h3 class="portfolio-item-title text-light">${name}</h3>
@@ -52,7 +55,10 @@ const generateProjects = projectsArr => {
         `;
         })
         .join('')}
+<<<<<<< HEAD
     
+=======
+>>>>>>> 3fa88289961ca5fbaa88d7aaa06b14dd30cd7a3f
       </div>
     </section>
   `;
@@ -66,7 +72,10 @@ module.exports = templateData => {
   return `
   <!DOCTYPE html>
   <html lang="en">
+<<<<<<< HEAD
   
+=======
+>>>>>>> 3fa88289961ca5fbaa88d7aaa06b14dd30cd7a3f
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -82,7 +91,13 @@ module.exports = templateData => {
       <div class="container flex-row justify-space-between align-center py-3">
         <h1 class="page-title text-secondary bg-dark py-2 px-3">${header.name}</h1>
         <nav class="flex-row">
+<<<<<<< HEAD
           <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${header.github}">GitHub</a>
+=======
+          <a class="ml-2 my-1 px-2 py-1 bg-secondary text-dark" href="https://github.com/${
+            header.github
+          }">GitHub</a>
+>>>>>>> 3fa88289961ca5fbaa88d7aaa06b14dd30cd7a3f
         </nav>
       </div>
     </header>
@@ -91,7 +106,11 @@ module.exports = templateData => {
       ${generateProjects(projects)}
     </main>
     <footer class="container text-center py-3">
+<<<<<<< HEAD
       <h3 class="text-dark">&copy;2020 by ${header.name}</h3>
+=======
+      <h3 class="text-dark">&copy; ${new Date().getFullYear()} by ${header.name}</h3>
+>>>>>>> 3fa88289961ca5fbaa88d7aaa06b14dd30cd7a3f
     </footer>
   </body>
   </html>
